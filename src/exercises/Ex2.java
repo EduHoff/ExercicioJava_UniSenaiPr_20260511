@@ -2,6 +2,8 @@ package exercises;
 
 import java.util.Scanner;
 
+//import entities.ex2.*;
+
 /* 
 Exercício 2: Sistema de Funcionários de uma Empresa
 Descrição

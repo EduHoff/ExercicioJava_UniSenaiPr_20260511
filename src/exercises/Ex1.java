@@ -2,6 +2,8 @@ package exercises;
 
 import java.util.Scanner;
 
+import entities.ex1.*;
+
 /* 
 Exercício 1: Sistema de Gerenciamento de Veículos com Herança
 Descrição
@@ -62,6 +64,29 @@ public class Ex1 implements Exercise {
     @Override
     public void run(Scanner sc) {
         System.out.println("--- Exercício 1 ---\n");
+
+        Carro carro = new Carro("Toyota", "Corolla", 2020, 4);
+        Moto moto = new Moto("Honda", "CG 160", 2022, true);
+        Caminhao caminhao = new Caminhao("Volvo", "FH", 2019, 25.5);
+
+        carro.acelerar(50);
+        moto.acelerar(80);
+        caminhao.acelerar(40);
+
+        carro.frear(20);
+
+        System.out.println("=== CARRO ===");
+        carro.exibirDados();
+
+        System.out.println();
+
+        System.out.println("=== MOTO ===");
+        moto.exibirDados();
+
+        System.out.println();
+
+        System.out.println("=== CAMINHÃO ===");
+        caminhao.exibirDados();
 
         
     }

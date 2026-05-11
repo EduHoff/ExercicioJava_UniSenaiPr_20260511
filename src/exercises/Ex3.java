@@ -2,6 +2,8 @@ package exercises;
 
 import java.util.Scanner;
 
+//import entities.ex3.*;
+
 /* 
 Exercício 3: Sistema de Contas Bancárias
 Descrição
