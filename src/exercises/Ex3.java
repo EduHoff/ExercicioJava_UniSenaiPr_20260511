@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-//import entities.ex3.*;
+import entities.ex3.*;
 
 /* 
 Exercício 3: Sistema de Contas Bancárias
@@ -64,6 +64,31 @@ public class Ex3 implements Exercise {
     public void run(Scanner sc) {
         System.out.println("--- Exercício 3 ---\n");
 
-        
+        ContaCorrente contaCorrente = new ContaCorrente("Carlos", 2000, "12345-6", 25);
+
+        ContaPoupanca contaPoupanca = new ContaPoupanca("Ana", 5000, "98765-4", 1.5);
+
+        ContaSalario contaSalario = new ContaSalario("Pedro", 1000, "55555-1", "Tech Solutions");
+
+        contaCorrente.depositar(500);
+        contaCorrente.sacar(300);
+        contaCorrente.descontarTaxa();
+
+        contaPoupanca.aplicarRendimento();
+
+        contaSalario.receberSalario(2500);
+
+        System.out.println("=== CONTA CORRENTE ===");
+        contaCorrente.exibirDados();
+
+        System.out.println();
+
+        System.out.println("=== CONTA POUPANÇA ===");
+        contaPoupanca.exibirDados();
+
+        System.out.println();
+
+        System.out.println("=== CONTA SALÁRIO ===");
+        contaSalario.exibirDados();
     }
 }
