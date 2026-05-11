@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-//import entities.ex2.*;
+import entities.ex2.*;
 
 /* 
 Exercício 2: Sistema de Funcionários de uma Empresa
@@ -64,6 +64,23 @@ public class Ex2 implements Exercise {
     public void run(Scanner sc) {
         System.out.println("--- Exercício 2 ---\n");
 
-        
+        Gerente gerente = new Gerente("Carlos", "111.111.111-11", 8000,2500);
+
+        Desenvolvedor desenvolvedor = new Desenvolvedor("Ana", "222.222.222-22", 6000, "Java");
+
+        Estagiario estagiario = new Estagiario("Pedro", "333.333.333-33", 0, 120, 15);
+
+        System.out.println("=== GERENTE ===");
+        gerente.exibirDados();
+
+        System.out.println();
+
+        System.out.println("=== DESENVOLVEDOR ===");
+        desenvolvedor.exibirDados();
+
+        System.out.println();
+
+        System.out.println("=== ESTAGIÁRIO ===");
+        estagiario.exibirDados();
     }
 }
